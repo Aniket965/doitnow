@@ -1,3 +1,7 @@
-const projectName = process.argv[2]
+const config = require('./src/config').config
+const projectName = process.argv[3]
+const commandType = process.argv[2]
 const shell = require('shelljs')
-shell.exec(`./scripts/cra.sh ${projectName}`)
+if (commandType === 'cra') {
+  shell.exec(`./scripts/cra.sh ${projectName}`)
+}

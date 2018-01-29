@@ -1,4 +1,5 @@
 #! /bin/bash
+cd /Users/root1/Projects/
 create-react-app $1
 if [ "$?" = 0 ]
 then

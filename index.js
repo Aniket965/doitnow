@@ -4,4 +4,6 @@ const commandType = process.argv[2]
 const shell = require('shelljs')
 if (commandType === 'cra') {
   shell.exec(`./scripts/cra.sh ${projectName}`)
+} else {
+  shell.exec(`./scripts/default.sh ${commandType}`)
 }

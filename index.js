@@ -1,9 +1,9 @@
-const config = require('./src/config').config
+#! /usr/local/bin/node
 const projectName = process.argv[3]
 const commandType = process.argv[2]
 const shell = require('shelljs')
 if (commandType === 'cra') {
-  shell.exec(`./scripts/cra.sh ${projectName}`)
+  shell.exec(`${__dirname}/scripts/cra.sh ${projectName}`)
 } else {
-  shell.exec(`./scripts/default.sh ${commandType}`)
+  shell.exec(`${__dirname}/scripts/default.sh ${commandType}`)
 }

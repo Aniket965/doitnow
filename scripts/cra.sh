@@ -1,5 +1,6 @@
 #! /bin/bash
-source ./scripts/config.sh
+BASEDIR=$(dirname "$0")
+source "$BASEDIR/config.sh"
 moveToProjectDir
 create-react-app $1
 if [ "$?" = 0 ]

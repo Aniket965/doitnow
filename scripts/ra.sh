@@ -5,6 +5,7 @@ cd $1
 if [ "$?" = 0 ]
 then
     openEditor
+    yarn start
     exit 0
 else
     echo "Name of Project is wrong 😅 have look!"

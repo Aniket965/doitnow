@@ -1,10 +1,11 @@
 #! /bin/bash
-cd /Users/root1/Projects/
+source ./scripts/config.sh
+moveToProjectDir
 create-react-app $1
 if [ "$?" = 0 ]
 then
     cd $1
-    code .
+    openEditor
     echo "Let Set Hack ❤️"
     yarn start
 else

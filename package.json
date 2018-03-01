@@ -1,6 +1,6 @@
 {
   "name": "doitnow",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Tool for lazy people",
   "main": "index.js",
   "bin": {
@@ -17,7 +17,8 @@
     "do",
     "it",
     "now",
-    "doitnow"
+    "doitnow",
+    "din"
   ],
   "author": "aniket965",
   "license": "MIT",

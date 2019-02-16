@@ -1,6 +1,9 @@
 #! /bin/bash
 moveToProjectDir() {
-   cd /Users/root1/Projects/
+   cd /Users/animoji/Projects/
+}
+moveToComptetiveCodingDir() {
+    cd /home/animoji/Projects/cc
 }
 openEditor() {
     code .

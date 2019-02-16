@@ -9,6 +9,9 @@ if (commandType === 'cra') {
   shell.exec(`${__dirname}/scripts/ra.sh ${projectName}`)
 } else if (commandType === 'spm') {
   shell.exec(`${__dirname}/scripts/spm.sh ${projectName}`)
-} else {
+}else if(commandType === 'cc') {
+  shell.exec(`${__dirname}/scripts/cc.sh ${projectName}`)
+} 
+ else {
   shell.exec(`${__dirname}/scripts/default.sh ${commandType}`)
 }
